@@ -42,7 +42,7 @@ class Traceroute:
                 self.route.append(res)
 
     def print(self):
-        print("*** Traceroute ***")
+        print("\n*** Traceroute ***")
         print("IP: " + self.ip)
         print("Route :")
         i = 1

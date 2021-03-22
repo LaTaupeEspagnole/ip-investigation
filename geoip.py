@@ -30,7 +30,7 @@ class GeoIP:
         self.countryCode = cmd_stdout.split()[3]
 
     def print(self):
-        print("*** GeoIP ***")
+        print("\n*** GeoIP ***")
         print("IP: " + self.ip)
         print("Country: " + self.country)
         print("Country code: " + self.countryCode)
