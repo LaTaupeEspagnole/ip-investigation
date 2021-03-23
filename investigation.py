@@ -4,14 +4,8 @@ from utils import *
 from traceroute import *
 from geoip import *
 from tor import *
+from whois import *
 
-#class WhoIs:
-#    def __init__(self, ip):
-#        self.ip = ip
-#
-#    def run():
-#        #FIXME
-#
 #class NMap:
 #    def __init__(self, ip):
 #        self.ip = ip
@@ -23,10 +17,10 @@ class Investigation:
     def __init__(self, ip):
         self.ip = ip
         self.modules = []
-        self.modules.append(Traceroute(ip))
-        self.modules.append(GeoIP(ip))
-        self.modules.append(Tor(ip))
-#        self.whois = WhoIs(ip)
+#        self.modules.append(Traceroute(ip))
+#        self.modules.append(GeoIP(ip))
+#        self.modules.append(Tor(ip))
+        self.modules.append(WhoIs(ip))
 #        self.nmap = NMap(ip)
 
     def dumpVersions(self):
